@@ -4,8 +4,6 @@
     <title>Title</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
       @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,400italic);
@@ -198,9 +196,6 @@ class: center, middle, img80
 - multiply every dollar invested in you = CBI.
 
 ---
-### OK, software is optional. What's next?
-
----
 class: center, middle
 # **Process**
 
@@ -261,8 +256,9 @@ class: center, middle
 - axe sharpening time, experimentation with better tools time
 - pay off technical debt
 - time for your teammates to create presentation, a training, watch video, read a book. Your team will thank you :)
-- technical innovation time, R&D 
+- technical innovation time, R&D (R&D days don't work.) 
 - surprise time! (underpromise, overdeliver)
+- magic time!
 - business incubation. Who else will do this, if not you? Business will thank you.
 
 ---
@@ -440,11 +436,11 @@ extreme constraint. it's like merging dev/testing column.
 
 --
 
-### <i class="far fa-lightbulb"></i> Set WiP aggressive limits to change human behavior.
+### <i class="far fa-lightbulb"></i> Set aggressive WiP limits to change human behavior.
 
 --
 
-### <i class="far fa-lightbulb"></i> Optimize the whole process from idea to cash. Local optimization slows down the whole.
+### <i class="far fa-lightbulb"></i> Optimize the whole process from idea to cash. Local optimizations slow down the whole.
 ???
 works cross-org and cross-team
 
@@ -475,24 +471,20 @@ Under pressure, we reduce quality because its internal decision. Negotiation is 
 
 ---
 class: center, middle
-# We want the same thing, but speak different languages. 
+# We want the same thing, but speak different language. 
 ### The Economics of Software Design — **dev.tube/video/TQ9rng6YFeY**
 ???
 - protecting our capacity to deliver features. The cost of adding features.
-- you say "i want this", and any dev says – 2 months or "NO IDEA HOW MUCH."
-- employee churn rate (good luck hiring good people)
 
 ---
 
-### Quality is **hiring accelerator**.
+### Quality is **reducing turnover**.
 ???
-- churn rate / retention
+- hard to find a company where quality is high. We want to do good work.
 
 --
 
 ### Quality is **attracting the right people**.
-???
-- churn rate / retention
 
 --
 
@@ -505,7 +497,7 @@ class: center, middle
 
 ### Quality is **long-term speed**.
 ???
-- invisible threat, bad stuff accumulates
+- invisible threat, complexity goes up naturally (Y code quality vs. X time per feature)
 - reinforcing loops (pressure, brooks, windows)
 
 --
@@ -517,7 +509,22 @@ class: center, middle
 ### Quality is **TCO reducer**.
 ???
 
+---
+# Working modes
 
+--
+
+### 1. Fixed
+
+--
+
+### 2. Dynamic, DDD (core domain, anticorruption layer)
+???
+different tools, techniques, and value systems (inc. quality requirements)
+
+--
+
+### 3. Dynamic, Lean Enterprise
 
 ---
 class: middle, white, img70
@@ -529,44 +536,23 @@ class: middle, white, img70
 - retire and replacement – fuck long-term.
 
 ---
-class: center, middle
-# Kent Beck’s 3X
-### bit.ly/kent_3x
+# Working modes
+### 1. Fixed
+### 2. Dynamic, DDD (core domain, anticorruption layer)
+### 3. Dynamic, Lean Enterprise
+### 4. Dynamic, 3X
 
 ---
-class: center, middle
-# Good vs. bad technical debt.
-
----
-class: center, middle
-# Good technical debt triggers an **immediate** negative feedback loop.
-???
-- hey! deadline! can we make it faster? 
-- you did that last time!
-- The next thing will be FIXING.
+![](kentbeck.jpg)
 
 ---
 class: center, middle, white
-background-image:url(no_drift.png)
-background-size: contain
-
----
-class: center, middle, white
-background-image:url(no_drift1.png)
-background-size: contain
+![](3x.jpg)
+# bit.ly/beck_3x
 ???
-- fewer sprint story points
-- the next item, if that's CD environment.
-- one you establish such a rule, that becomes a habit. And part of the culture.
-
----
-class: books, middle, center
-![Book](https://images.gr-assets.com/books/1475538019l/113934.jpg)
-![Book](https://images.gr-assets.com/books/1388500407l/349417.jpg)
-![Book](https://images.gr-assets.com/books/1347640457l/8686650.jpg)
-![Book](https://images.gr-assets.com/books/1333576876l/10127019.jpg)
-???
-- CD – FAST AND STABILITY
+explore – reduce the cost of MANY experiments. if successful, then
+expand - omg, firefight and solve bottlenecks. Once calm
+extract - optimize, economies of scale.
 
 ---
 class: center, middle, video
@@ -580,10 +566,11 @@ class: center, middle, video
 - CUSTOMERS – Those who order your services and paying for the show.
 
 ---
-class: center, middle
-# Fast Delivery != Happy Customers
-???
-- CUSTOMERS – Those who order your services and paying for the show.
+class:
+### Cycle time <i class="fas fa-not-equal"></i> Lead time
+### Fast delivery <i class="fas fa-not-equal"></i> Happy customers
+### Silent customers <i class="fas fa-not-equal"></i> Happy customers
+
 
 ---
 class: center, middle, white
@@ -630,11 +617,6 @@ class: center, middle
 - moving away from iterations to JIT delivery (not clear when things will be done, but always faster than 2 weeks). 
 - Customers were unhappy, and I was informed by AUDITOR :)
 - some customers prefer predictability over speed.
-
----
-class: center, middle
-# One-on-Ones
-???
 - retros does not involve customer!
 - what's your goal? (sell company! expand!)
 - is there anything that you don't like?
@@ -1046,20 +1028,6 @@ managing up. helping your manageers.
 background-image:url(youmadeit.jpg)
 class: center, middle, strongy
 # **You made it!**
-
----
-class: white, shorter
-### ![:levels Technology, fas, fas, fas, fas, fas]
-
-### ![:levels Business, fas, fas, fas, fas, fas]
-
-### ![:levels Process, fas, fas, fas, fas, fas]
-
-### ![:levels Mentoring, fas, fas, fas, fas, fas]
-
-### ![:levels Communication, fas, fas, fas, fas, fas]
-???
-- remember that being a pro means working on 5 areas. IT is more sociaology than tech, the more senior you become, the more you'll understand it. I am glad you were here and I hope you learned something.
 
 ---
 ## Want to learn more?
