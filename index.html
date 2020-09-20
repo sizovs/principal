@@ -13,14 +13,44 @@
         font-family: 'Exo 2';         
         background-color: black !important;
       }
-      h1, h2, h3 {
+      
+      .fade-txt {
+        color: #333;
+      }
+
+      .fade-txt em {
+        color: white;
+      }
+
+      h1, h2, h3, h4 {
         font-family: 'Exo 2';
         font-weight: normal;
       }
+      
+      h4 {
+        font-size: 1.3em;
+      }
+
+      .oneem {
+        font-size: 1em;
+      }
+
     
+      .syst img {
+        width: 400px;
+        position: absolute;
+        right: 60px;
+        bottom: -170px;
+      }
       .strongy strong { padding: 0.2em 1em; background-color: black; opacity: 0.8; }
       strong { border-bottom: 5px solid #e74c3c; color: white;}
       .last-emphasize h3:last-of-type { font-weight: bold }
+
+      .others-fade h3:not(:last-of-type) .fady, 
+      .others-fade h3:not(:last-of-type) .fady strong { 
+        opacity: 0.2;
+      }
+
       em { font-weight: bold; font-style: normal; }
 
       .left { float: left; } .right { float: right }
@@ -118,9 +148,13 @@ class: center, middle
 
 ---
 class: center, middle
-![:ribbon Rule, small]
-## Behind every feature request is a problem that can be solved without writing software. Let's consider alternatives and do CBA.
-### — You
+## Behind every feature request is a problem that can be solved without writing software. Consider alternatives and perform CBA.
+
+---
+class: center, middle
+![:ribbon Work in teams, small]
+# Think of **five** examples of problems that developers strive to solve with code, where a cheaper solution would suffice.
+### 🍪 cookies for non-trivial examples
 
 ---
 class: img50, center
@@ -129,43 +163,149 @@ class: img50, center
 ---
 class: img50, center
 ## Our highest priority is to find **cost-effiecient** solutions to customer's problems.
+???
+
 
 ---
 class: center, middle
-## Obvious? Complicated? Complex?
-### — Cynefin framework
+### ~~💩 I just write code (80% of dev pool)~~
+
+### As an individual contributor, I cost-effectively solve problems that someone throws on me (20% of dev pool)
+???
+some of you will stay here long, maybe forever. Some of you will realize that.
 
 ---
-class: center, middle, white
+### - You'll be constrained by poor management, teamwork, process, engineering practices, enterprise architecture. 🤬
+
+--
+
+### - Untangling those issues is more important than your IC.
+
+--
+
+### - Changing jobs won't make a big difference.
+
+---
+class: white
 background-image:url(demand_supply.png)
 background-size: contain
 ???
-look ma, no software. SOLUTIONS INSTEAD :-)) it's the possible solution.
+- Demand. Organize effective supply system.
+- Complex sociotechnical system.
 
 ---
-class: center, middle
-# 3/4 skills missing.
-
----
-class: center, middle, white
-background-image:url(demand_supply1.png)
-background-size: contain
-???
-understandng business.
-
----
-class: center, middle, white
+class: white
 background-image:url(demand_supply2.png)
 background-size: contain
 
 ---
-class: center, middle, white
-background-image:url(demand_supply3.png)
-background-size: contain
+### Software Development Env is a Complex Sociotechnical System.
+###&nbsp;
+###&nbsp;
+###&nbsp;
+---
+
+class: syst
+### Software Development Env is a **Complex** Sociotechnical **System**.
+#### 💡 A system composed of many components which may interact with each other. Difficult to model due to dependencies, competitions, relationships. 
+
+--
+
+### ~~Best practices.~~ Emergent practices.
+
+--
+
+### ~~Hiring more devs.~~ Nonlinearity.
+
+--
+
+### ~~Extrinsic motivation.~~ Adaptation.
+
+![](thinking_in_systems.jpg)
+---
+
+### Software Development Env is a Complex **Sociotechnical** System.
+#### 💡 A sociotechnical system (STS) is a system that includes the complex *interaction* between *people* and *technology* within a specific *context*.
 
 ---
-class: center, middle, white
-background-image:url(demand_supply4.png)
+
+### Software Development Env is a Complex **Sociotechnical** System.
+#### .fade-txt[💡 A sociotechnical system (STS) is a system that includes the complex *interaction* between *people* and *technology* within a specific *context*.]
+
+--
+class: others-fade
+
+### .fady[**Interaction**: Lean Engineering, Kanban, XP, Systems Thinking]
+
+--
+
+### .fady[**People**: cogn. psychology, sociology, communication, leadership]
+
+--
+
+### .fady[**Technology**: work-specific tools (20%), fundamentals (80%)]
+
+--
+
+### .fady[**Context**: domain knowledge, costs, leverage]
+
+---
+class: middle, center
+# High Leverage Activities (HLAs).
+
+---
+class: oneem
+<table>
+  <tr>
+    <td width="500px"><h3>Low leverage</h3></td>
+    <td><h3>High leverage</h3></td>
+</tr>
+
+--
+
+<tr>
+  <td><h4>❌ Ad-hoc refactoring</h4></td>
+  <td><h4>✅ Strategic refactoring</h4></td>
+</tr>
+
+--
+
+<tr>
+  <td><h4>❌ Gatekeeping</h4></td>
+  <td><h4>✅ Mentoring craftsmanship / XP</h4></td>
+</tr>
+
+--
+
+<tr>
+  <td><h4>❌ Marchitecting</h4></td>
+  <td><h4>✅ Architecting for maximum flow</h4></td>
+</tr>
+
+--
+
+<tr>
+  <td><h4>❌ Growing followers</h4></td>
+  <td><h4>✅ Growing leaders</h4></td>
+</tr>
+
+--
+
+<tr>
+  <td><h4>❌ Making your team faster</h4></td>
+  <td><h4>✅ Making the slowest team faster</h4></td>
+</tr>
+
+--
+
+<tr>
+  <td><h4>❌ Opinion-driven backlog</h4></td>
+  <td><h4>✅ Data-driven backlog</h4></td>
+</tr>
+
+---
+class: center, middle
+background-image:url(my_money.jpg)
 background-size: contain
 
 ---
@@ -174,73 +314,23 @@ class: img70, center, middle
 ### **twitter.com/Werner/status/1169979140784525312**
 
 ---
-<table>
-  <tr>
-    <td width="500px"><h3>Low impact</h3></td>
-    <td><h3>High impact</h3></td>
-</tr>
+# What's next?
 
 --
 
-<tr>
-  <td><h4>❌ Develops software systems</h4></td>
-  <td><h4>✅ Solves problems with CBA</h4></td>
-</tr>
+### Add **people** and **process** topics into your curriculum.
 
 --
 
-<tr>
-  <td><h4>❌ Shows no interest in business</h4></td>
-  <td><h4>✅ Thinks like CEO (cost · risk · asset · liability · ROI · HLAs)</h4></td>
-</tr>
-???
-- high leverage activities end up in higher ROI.
-- multiply every dollar invested in you = CBI.
+### Add extra leadership / management / community responsibilities. 
 
 --
 
-<tr>
-  <td><h4>❌ Develops himself</h4></td>
-  <td><h4>✅ Develops A-class people</h4></td>
-</tr>
-
---
-
-
-<tr>
-  <td><h4>❌ Gives up process to managers</h4></td>
-  <td><h4>✅ Incrementally improves the process</h4></td>
-</tr>
-???
-devs no idea about business :(
-manager no idea about tech :(
-
---
-
-<tr>
-  <td><h4>❌ Just gets things done</h4></td>
-  <td><h4>✅ Promotes technical excellence</h4></td>
-</tr>
-</table>
-???
-- how it is done is as important as having it done
-
----
-class: center, middle
-background-image:url(my_money.jpg)
-background-size: contain
-
----
-class: center, middle
-![:ribbon Task]
-## <i class="far fa-calendar-check"></i> Schedule a personal retrospective in your calendar. 
-### 4x Fridays, 15min each.
-
----
-class: center, middle
-![:ribbon Task]
-## <i class="far fa-calendar-check"></i> Schedule a bookshelf review.
-### 15min.
+### Add money to the company:
+#### ↓ CUSTOMERS · INVESTORS 💰 💰 💰 💰 💰  
+#### ↓ TOP MANAGEMENT 💰 💰 💰  
+#### ↓ YOUR LEAD/MANAGER $ $ 💰 💰  
+#### YOU 💰
 
 ---
 class: center, middle
@@ -258,16 +348,16 @@ class: center, middle
 class: center, middle, white
 background-image:url(wip_control_push1.png)
 background-size: contain
-
---
-
-![right-abs](https://images.gr-assets.com/books/1361113128l/17255186.jpg)
 ???
 - reinforcing loop: slow -> more pressure, more work
 - low quality, corners cut, debt goes up
 - no buffer to accomodate uncertaincy, missed deadlines
 - how people feel?
 - no innovation time
+
+--
+
+![right-abs](https://images.gr-assets.com/books/1361113128l/17255186.jpg)
 
 ---
 class: center, middle
@@ -441,31 +531,32 @@ example of 2 teams, 1 is overproducing.
 
 --
 
-### <i class="far fa-lightbulb"></i> Focus all efforts on the bottleneck.
+### <i class="far fa-lightbulb"></i> Find and fix the bottleneck.
 ???
 - often where work piles up.
 - The responsibility of the bottleneck is STOP being a bottleneck.
 
 --
 
-### <i class="far fa-lightbulb"></i> Control overproduction.
+### <i class="far fa-lightbulb"></i> Set WiP limits to control overproduction.
 ???
 - I sometimes say "slack is better than overproduction."
 - Stop starting. Start finishing. If you can't help finishing, just do nothing.
 
 --
 
-### <i class="far fa-lightbulb"></i> Set aggressive WiP limits to change human behavior.
-
---
-
-### <i class="far fa-lightbulb"></i> Optimize the whole process from idea to cash. Local optimizations slow down the whole.
+### <i class="far fa-lightbulb"></i> Optimize Lead Time. Local optimizations slow down the whole.
 ???
-works cross-org and cross-team
+- works cross-org and cross-team
+- this is architecture :)
+
 
 --
 
-### <i class="far fa-lightbulb"></i> Measure Lead Time.
+![](goal.jpg)&nbsp;
+![](kanban.jpg)&nbsp;
+![](leanpop.jpg)
+
 
 ---
 class: center, middle
@@ -501,35 +592,40 @@ class: center, middle
 
 ---
 
-### Quality is **reducing turnover**.
+### Craftsmanship **reduces turnover**.
 ???
 - hard to find a company where quality is high. We want to do good work.
 
 --
 
-### Quality is **attracting the right people**.
+### Craftsmanship **attracts the right people**.
 
 --
 
-### Quality is **immediate speed** [requires mastery].
-???
-- reading vs. writing is 10:1
-- requires mastery (TDD), but you have right people, right? :-)
-
---
-
-### Quality is **long-term speed**.
+### Craftsmanship is essential for **long-term speed**.
 ???
 - invisible threat, complexity goes up naturally (Y code quality vs. X time per feature)
 - reinforcing loops (pressure, brooks, windows)
 
 --
 
-### Quality is **predictability**.
+### Craftsmanship gives **short-term speed** [TDD, Refactoring].
+???
+- reading vs. writing is 10:1
+- requires mastery (TDD), but you have right people, right? :-)
 
 --
 
-### Quality is **TCO reducer**.
+### Craftsmanship enables **estimation**.
+
+--
+
+### Craftsmanship reduces **unplanned work**.
+
+--
+
+### Craftsmanship reduces **TCO**.
+
 ???
 
 ---
