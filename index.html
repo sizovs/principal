@@ -26,10 +26,6 @@
         color: #333;
       }
 
-      .fade-txt em {
-        color: white;
-      }
-
       h1, h2, h3, h4 {
         font-family: 'Exo 2';
         font-weight: normal;
@@ -50,6 +46,20 @@
         right: 60px;
         bottom: -170px;
       }
+
+      .impact img {
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+        width: 600px;
+      }
+
+      .eisen img {
+        position: absolute;
+        right: 100px;
+        width: 420px;
+      }
+
       .strongy strong { padding: 0.2em 1em; background-color: black; opacity: 0.8; }
       strong { border-bottom: 5px solid #e74c3c; color: white;}
       .last-emphasize h3:last-of-type { font-weight: bold }
@@ -144,25 +154,49 @@ class: center
 
 ---
 class: center, middle
-## **Customers don't need software and features**. 
+## Customers don't need software and features. 
+### (even when they're asking for features)
+
+---
+
+class: center, middle
+## Customers don't need software and features. 
+### **They need cost-efficient solutions to their problems.**
 ???
-They need solution to their problem.
 
 ---
 class: center, middle
-![:ribbon Think, small]
-## Why producing software and features is not always the best solution? 
-### <i class="fab fa-github"></i> github.com/kelseyhightower/nocode
+![:ribbon Exercise, small]
+## What is the cost of software? $$$
 
 ---
-class: center, middle
-## Behind every feature request is a problem that can be solved without writing software. Consider alternatives and perform CBA.
+
+#### 1. Feature request comes in.
+
+--
+
+#### 2. Understand the problem (is it actually a problem?)
+
+--
+
+#### 3. Prioritise the problem.
+
+.eisen[![](eisenhover.png)]
 
 ---
-class: center, middle
-![:ribbon Work in teams, small]
-# Think of **five** examples of problems that developers strive to solve with code, where a cheaper solution would suffice.
-### 🍪 cookies for non-trivial examples
+
+#### 1. Feature request comes in.
+#### 2. Understand the problem (is it actually a problem?)
+#### 3. Prioritise the problem.
+#### 4. Gather a list of possible solutions (all hands on the deck).
+
+--
+
+#### 5. Find an optimal solution with CBA (time, cost, risk, maintenance, impact on software...)
+
+--
+
+#### 6. Solve it.
 
 ---
 class: img50, center
@@ -171,14 +205,12 @@ class: img50, center
 ---
 class: img50, center
 ## Our highest priority is to find **cost-effiecient** solutions to customer's problems.
-???
-
 
 ---
 class: center, middle
 ### ~~💩 I just write code (80% of dev pool)~~
 
-### As an individual contributor, I cost-effectively solve problems that someone throws on me (20% of dev pool)
+### As an individual contributor, I solve assigned problems cost-efficiently (20% of dev pool)
 ???
 some of you will stay here long, maybe forever. Some of you will realize that.
 
@@ -206,56 +238,136 @@ class: white
 background-image:url(demand_supply2.png)
 background-size: contain
 
----
-### Software Development Env is a Complex Sociotechnical System.
-###&nbsp;
-###&nbsp;
-###&nbsp;
----
-
-class: syst
-### Software Development Env is a **Complex** Sociotechnical **System**.
-#### 💡 A system composed of many components which may interact with each other. Difficult to model due to dependencies, competitions, relationships. 
-
---
-
-### ~~Best practices.~~ Emergent practices.
-
---
-
-### ~~Hiring more devs.~~ Nonlinearity.
-
---
-
-### ~~Extrinsic motivation.~~ Adaptation.
-
-![](thinking_in_systems.jpg)
----
-
-### Software Development Env is a Complex **Sociotechnical** System.
-#### 💡 A sociotechnical system (STS) is a system that includes the complex *interaction* between *people* and *technology* within a specific *context*.
 
 ---
 
-### Software Development Env is a Complex **Sociotechnical** System.
-#### .fade-txt[💡 A sociotechnical system (STS) is a system that includes the complex *interaction* between *people* and *technology* within a specific *context*.]
+### **Sociotechnical System.**
+#### 💡 A sociotechnical system (STS) is a *complex system* that includes the complex *interaction* between *people* and *technology* within a specific *context*.
+
+---
+
+### **Sociotechnical System.**
+#### .fade-txt[💡 A sociotechnical system (STS) is a] *complex system* .fade-txt[that includes the complex *interaction* between *people* and *technology* within a specific *context*.]
+
 
 --
-class: others-fade
+### Complex system
 
-### .fady[**Interaction**: Lean Engineering, Kanban, XP, Systems Thinking]
-
---
-
-### .fady[**People**: cogn. psychology, sociology, communication, leadership]
-
---
-
-### .fady[**Technology**: work-specific tools (20%), fundamentals (80%)]
+.syst[![](thinking_in_systems.jpg)]
 
 --
 
-### .fady[**Context**: domain knowledge, costs, leverage]
+#### ~~Spotify Model.~~ Emergent practices.
+
+--
+
+#### ~~Adding more manpower.~~ Nonlinearity.
+
+--
+
+#### ~~Extrinsic motivation.~~ Adaptation.
+
+
+---
+
+### **Sociotechnical System.**
+#### .fade-txt[💡 A sociotechnical system (STS) is a *complex system* that includes the complex] *interaction* .fade-txt[between *people* and *technology* within a specific *context*.]
+
+--
+### Interaction (process)
+
+--
+
+#### Lean
+
+--
+
+#### Scrum
+
+--
+
+#### Kanban
+
+--
+
+#### XP
+
+
+---
+
+### **Sociotechnical System.**
+#### .fade-txt[💡 A sociotechnical system (STS) is a *complex system* that includes the complex *interaction* between] *people* .fade-txt[and *technology* within a specific *context*.]
+
+--
+### People ("soft" skills)
+
+--
+
+#### Psychology
+
+--
+
+#### Sociology
+
+--
+
+#### Communication
+
+--
+
+#### Leadership
+
+--
+
+#### Mindfulness
+
+---
+
+### **Sociotechnical System.**
+#### .fade-txt[💡 A sociotechnical system (STS) is a *complex system* that includes the complex *interaction* between *people* and] *technology* .fade-txt[within a specific *context*.]
+
+--
+### Technology 
+
+--
+
+#### Coding
+
+--
+
+#### Patterns
+
+--
+
+#### Architecture
+
+--
+
+#### XP
+
+--
+
+#### sizovs.net/2018/12/17/stop-learning-frameworks
+
+---
+
+### **Sociotechnical System.**
+#### .fade-txt[💡 A sociotechnical system (STS) is a *complex system* that includes the complex *interaction* between *people* and *technology* within a specific] *context*.
+
+--
+### Context (business)
+
+--
+
+#### Goals
+
+--
+
+#### Constraints (scope, cost, time, etc.)
+
+--
+
+#### Leverage
 
 ---
 class: middle, center
@@ -272,8 +384,8 @@ class: oneem
 --
 
 <tr>
-  <td><h4>❌ Ad-hoc refactoring</h4></td>
-  <td><h4>✅ Strategic refactoring</h4></td>
+  <td><h4>❌ Refactoring bad code</h4></td>
+  <td><h4>✅ Refactoring code that slows down the team</h4></td>
 </tr>
 
 --
@@ -286,8 +398,8 @@ class: oneem
 --
 
 <tr>
-  <td><h4>❌ Marchitecting > bit.ly/marchitect 😱</h4></td>
-  <td><h4>✅ Architecting for maximum flow</h4></td>
+  <td><h4>❌ Organizing "R&D days"</h4></td>
+  <td><h4>✅ Making R&D part of the everyday work</h4></td>
 </tr>
 
 --
@@ -304,41 +416,39 @@ class: oneem
   <td><h4>✅ Making the slowest team faster</h4></td>
 </tr>
 
---
-
-<tr>
-  <td><h4>❌ Opinion-driven backlog</h4></td>
-  <td><h4>✅ Data-driven backlog</h4></td>
-</tr>
+---
+background-size: contain
+background-image:url(impact_resp.png)
+???
+individual contribution decreases, your output becomes output of the team or the team of teams.
 
 ---
-class: center, middle
-background-image:url(my_money.jpg)
-background-size: contain
+## So what?
+
+--
+
+#### - Don't think in features. Think in problems.
+
+--
+
+#### - Solve problems cost-efficiently.
+
+--
+
+#### - There will be too much to do. Focus on HLAs. 
+
+--
+
+#### - You can't do everything yourself. Create systems. 🌴
+
+--
+
+#### - To do that, learn **fundamentals** of systems, business, people, and process.
 
 ---
 class: img70, center, middle
 ![](werner.png)
 ### **twitter.com/Werner/status/1169979140784525312**
-
----
-# What's next?
-
---
-
-### Add **people** and **process** topics into your curriculum.
-
---
-
-### Add extra leadership / management / community responsibilities. 
-
---
-
-### Add money to the company:
-#### ↓ CUSTOMERS · INVESTORS 💰 💰 💰 💰 💰  
-#### ↓ TOP MANAGEMENT 💰 💰 💰  
-#### ↓ YOUR LEAD/MANAGER $ $ 💰 💰  
-#### YOU 💰
 
 ---
 class: center, middle
@@ -405,7 +515,8 @@ background-image:url(wip_ok4.png)
 background-size: contain
 ???
 - Scrum is WiP limiting, PULL system! How? Iteration length. Velocity.
-- Scrum is also DEADLINE-proof. Basically, you take work based on velocity, not based on DEADLINE.
+- If urgenecy, you take out existing tasks from the sprint and inform stakeholders that they won't get it.
+- Estimates are not evil. :-)
 
 ---
 class: center, middle
@@ -417,7 +528,7 @@ class: center, middle
 - time for your teammates to create presentation, a training, watch video, read a book. Your team will thank you :)
 - technical innovation time, R&D (R&D days don't work.) 
 - surprise time! (underpromise, overdeliver)
-- magic time!
+- optimize for wow.
 - business incubation. Who else will do this, if not you? Business will thank you.
 
 ---
@@ -859,6 +970,12 @@ class: center, middle, video
 </video>
 
 ---
+class: center, middle
+### Either lead, follow, or get out of the way. 
+#### It’s okay to shoot holes in things as long as you come up with a solution.
+#### — Naval
+
+---
 class: last-emphasize
 # Mentor's Toolbox
 
@@ -910,7 +1027,7 @@ background-size: contain
 
 ---
 class: center, middle
-## What are going to do about it?
+## What are you going to do about it?
 ### \#coaching
 
 ---
@@ -1020,12 +1137,16 @@ background-size: contain
 class: center, middle
 background-image:url(consultants.png)
 background-size: contain
-# **Who the fuck you are?**
+# **Who the hell are you?**
 ???
 - why should I listen you? how can I trust you?
 - The best argument rarely wins the argument.
 
 ---
+
+### <i class="far fa-lightbulb"></i> Firstly, your knowledge
+
+--
 
 ### <i class="far fa-lightbulb"></i> Your authority
 ???
@@ -1050,10 +1171,6 @@ body lang 55%, voice 30%
 --
 
 ### <i class="far fa-lightbulb"></i> Your ability to gain trust
-
---
-
-### <i class="far fa-lightbulb"></i> Finally, your tech skills
 
 ---
 # Am I a good leader?
@@ -1091,7 +1208,8 @@ class: center, middle
 
 ---
 class: center, middle
-## But what matter most is that you're happy and enjoy what you do :-)
+## Leadership means **serving** people so they get maximum **DRIVE**.
+### autonomy - mastery - purpose
 
 ---
 background-image:url(youmadeit.jpg)
