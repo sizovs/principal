@@ -105,6 +105,7 @@
       .bad { background-color: #e74c3c; color: white;}
       .fade {color:#d3d3d3}
       .fade strong {color:black}
+      .shadow { box-shadow: inset 0px 0px 400px 400px rgba(0, 0, 0, .6) }
       .img100 img {width:122%}
       .img80 img {width:80%}
       .img70 img {width: 70%;}
@@ -119,7 +120,6 @@
         box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75); 
       }
       .growbot { background-color: #6A4CA6}
-
     </style>
   </head>
   <body>
@@ -156,7 +156,7 @@ class: center, middle
 ---
 class: center, middle
 ![:ribbon Exercise, small]
-## Why software is not always the best solution?
+## Why software is *not* always the cost-efficient solution?
 
 ---
 class: img50, center
@@ -168,6 +168,11 @@ class: img50, center
 
 ---
 class: center, middle
+### 💡 The process of finding the cost-efficient solution from a list of alternatives is called *Cost-Benefit Analysis (CBA)*.
+#### time · cost · risk
+
+---
+class: center, middle
 ![:ribbon Exercise, small]
 ### Find cost-efficient solutions to the problems:
 
@@ -175,28 +180,21 @@ class: center, middle
 class: center, middle
 ![:ribbon Exercise, small]
 ### (1/2) Backlog Item #JR-1234:
-#### Taxpayers are required to submit tax reports from February 1st to March 31st. Every year, during that period, our system becomes unstable, as taxpayers rush to submit documents as soon as possible. Since our webserver can't keep up with the load, make the system more scalable by re-implementing blocking code with reactive programming.
+#### Taxpayers are required to submit tax reports from February 1st to March 31st. Every year, during that period, our system becomes unstable, as taxpayers rush to submit documents as soon as we email them. Since our webserver can't keep up with the load, make the system more scalable by re-implementing blocking code with reactive programming.
 
 
 ---
 class: center, middle
 ![:ribbon Exercise, small]
 ### (2/2) Backlog Item #JR-2345:
-#### As a business analyst, I want to have a rich and convenient UI so that non-technical (internal) users and I could query any information from the database, analyze data, and build visual reports. The interface must support complex data queries, filtering, and charts.
+#### As a business analyst, I want to have a rich and convenient UI so that non-technical (internal) users and I could query any information from the database, analyze data, and build visual reports. The interface must support complex data queries, filtering, and charts. UX wireframes are attached.
 
 ---
 class: center, middle
 ### A good backlog item describes a problem, not a specific solution. The team decides how to solve the problem *cost-effieciently*.
-#### ⚠️ Spoon-feeding a team with specific solutions leads to low motivation, low innovation culture, and mediocre software solutions.
-
----
-class: center, middle
-### 💡 The process of finding the cost-efficient solution from a list of alternatives is called *Cost-Benefit Analysis (CBA)*.
-#### time · cost · risk · roi
-
----
-class: center, middle
-### 💡 Facilitation tip: don't allow teams to proceed with implementation before they considered at least two alternatives.
+#### ⚠️ Spoon-feeding a team with specific solutions leads to low motivation, low innovation culture (aka "feature factory"), and mediocre software solutions.
+???
+- skimlinks story
 
 ---
 class: center, middle
@@ -210,7 +208,16 @@ class: center, middle
 
 ---
 class: center, middle
-### 💡 Tip: every newcomer works in the customer service team for at least 10 days.
+![:ribbon Exercise, small]
+## How to turn software developers into problem solvers / seekers of cost-efficient solutions?
+???
+- Facilitation: don't allow teams to proceed with implementation before they considered at least two alternatives.
+- When hired, every engineer should spend at least 2 weeks working in a customer service team.
+- Understanding business, DDD skills and mentoring.
+- No men-in-the-middle: analysts, product owner proxies. Direct access to customers.
+- Going to gemba.
+- Story is a promise for a conversation. No solutions, only problems.
+- Hiring and culture, showing good example.
 
 
 ---
@@ -309,7 +316,9 @@ class: center, middle, bad
 ### But I am being assigned too much work...
 
 ---
-class: center, middle, oki
+background-image:url(kentbeck.jpg)
+background-size: contain
+class: center, middle, shadow
 ### Work cannot be assigned; it can only be accepted. If someone tries to give you responsibility, only you can decide if you are responsible or if you aren’t.
 #### – eXtreme Programming Explained (Kent Beck)
 
@@ -370,6 +379,12 @@ class: center, middle, oki
 
 class: white
 background-image:url(burndown.png)
+background-size: contain
+
+---
+
+class: white
+background-image:url(burndown1.png)
 background-size: contain
 
 ---
@@ -445,8 +460,19 @@ background-image:url(swarm6.png)
 background-size: contain
 
 ---
-#### 💡 Focus as many people as possible on as few projects/stories/tasks as possible.
-#### 💡 Make all work visible.
+
+#### 💡 Low WiP reduces lead time, reduces risks, and improves teamwork
+???
+reduces lead time = accelerates value delivery.
+
+--
+
+#### 💡 Focus as many people as possible on as few projects/stories/tasks as possible
+???
+how it's called in Scrum? Swarming :-)
+
+--
+
 #### 💡 *Stop starting. Start finishing*. 
 
 Set explicit WiP limits so that developers focus on completing existing stories, instead of starting new stories. If WiP limit is reached, nobody is allowed to take new work. Everybody should be *helping finish the existing work*, eliminate process bottlenecks, or slack.
@@ -454,8 +480,8 @@ Set explicit WiP limits so that developers focus on completing existing stories,
 --
 
 ![](goal.jpg)&nbsp;
-![](kanban.jpg)&nbsp;
 ![](leanpop.jpg)
+![](kanban.jpg)&nbsp;
 
 ---
 class: center, middle
@@ -470,17 +496,12 @@ background-size: contain
 
 ---
 class: center, middle
-## Low (and highly focused) WiP accelerates value delivery, reduces risks, and improves teamwork.
-
----
-class: center, middle
 ![:ribbon Challenge]
-## WiP reduction challenge.
+## Work in Progress (WiP) exercise time!
 
 ---
 class: center, middle
-#### All we are doing is looking at the timeline from the moment a customer gives us an order to the point when we collect the cash (Lead Time). And we are reducing that timeline by *eliminating the wastes*.
-### — Taiichi Ohno, the father of “Lean Manufacturing”
+### We're increasing **throughput** by hiring more people (here be dragons), making them more proficient, and eliminating the wastes.
 
 ---
 ## Wastes of Software Development
@@ -519,167 +540,41 @@ class: center, middle
 ---
 class: center, middle
 ![:ribbon Challenge]
-## Waste elimination challenge.
+## Wastes exercise time!
 
 ---
 class: center, middle
 background-image:url(my_money.jpg)
 background-size: contain
-???
-- Skimlinks – 3 months, CTO offer.
-- Ask.fm – half a year consultant, overtake CTO offer.
-- VMWare chief architect, immediate offer.
-- VPoE JIRA, when I was 23, 250,000 USD + stocks.
 
 ---
-
-class: img70, center, middle
-![:ribbon $$$]
-![](variables_tweet.png)
-### **twitter.com/eduardsi/status/1167771523173801984**
-???
-Under pressure, we reduce quality because its internal decision. Negotiation is hard.
-
+<table>
+  <tr>
+    <td width="500px"><h4>Good</h4></th>
+    <td><h3>Bad</h3></th>
+  </tr>
+  <tr>
+    <td><h5>✅ Autonomous, cross-functional, self-organizing teams</h5> </td><td><h5>❌ Backend, front-end, QA, DevOps "teams"</h5></td>
+  </tr>
+  <tr>
+    <td><h5>✅ Architecting for flow</h5> </td><td><h5>❌ Architecting for low duplication of effort and reuse (too early)</h5></td>
+  </tr>  
+  <tr>
+    <td><h5>✅ Continuous technical excellence</h5> </td><td><h5>❌ Mediocrity / The Invisible Threat</h5></td>
+  </tr>    
+  <tr>
+    <td><h5>✅ Measuring IT performance: lead time (velocity), due date performance, defects, wastes, TTR, TTD, and ROI</h5> </td><td><h5>—</h5></td>
+  </tr>      
+</table>
 
 ---
 class: center, middle
-# The Economics of Software Design 
+# 🍿 The Economics of Software Design 
 ### **dev.tube/video/TQ9rng6YFeY**
-???
-- We want the same thing, but speak different language. 
-
----
-
-### Craftsmanship **reduces turnover**.
-???
-- hard to find a company where quality is high. We want to do good work.
-
---
-
-### Craftsmanship **attracts the right people**.
-
---
-
-### Craftsmanship is essential for **long-term speed**.
-???
-- invisible threat, complexity goes up naturally (Y code quality vs. X time per feature)
-- reinforcing loops (pressure, brooks, windows)
-
---
-
-### Craftsmanship gives **short-term speed** [TDD, Refactoring].
-???
-- reading vs. writing is 10:1
-- requires mastery (TDD), but you have right people, right? :-)
-
---
-
-### Craftsmanship enables **estimation**.
-
---
-
-### Craftsmanship reduces **unplanned work**.
-
---
-
-### Craftsmanship reduces **TCO**.
-
---
-
-### Craftsmanship is **your reputation**.
-
-???
-
----
-# Working modes
-
---
-
-### 1. Fixed
-
---
-
-### 2. Dynamic, DDD (core domain, anticorruption layer)
-???
-different tools, techniques, and value systems (inc. quality requirements)
-
---
-
-### 3. Dynamic, Lean Enterprise
-
----
-class: middle, white, img70
-![](4phases.jpg)
-![lean-ent](lean_ent.jpg)
-???
-- exeptions: WHAT IF THERE IS NO LONG-TERM?
-- if your company is exploring, maybe you need an MVE or throway prototype.
-- retire and replacement – fuck long-term.
-
----
-# Working modes
-### 1. Fixed
-### 2. Dynamic, DDD (core domain, anticorruption layer)
-### 3. Dynamic, Lean Enterprise
-### 4. Dynamic, 3X
-
----
-![](kentbeck.jpg)
-
----
-class: center, middle, white
-![](3x.jpg)
-# bit.ly/beck_3x
-???
-explore – reduce the cost of MANY experiments. if successful, then
-expand - omg, firefight and solve bottlenecks. Once calm
-extract - optimize, economies of scale.
-
----
-class: center, middle, video
-<video height="500" controls>
-  <source src="jeff.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-???
-- END-TO-END! 
-- It's not about how fast we are, it's about how do we make customers happy.
-- CUSTOMERS – Those who order your services and paying for the show.
 
 ---
 class: center, middle
-![:ribbon Bonus]
-## How we deliver is as important as what we deliver. 
-### Focus on perception/marketing.
-???
-- strategy! (customer does not give a shit how busy you are... expand but remember Insta 15 people, split according to rev streams, remote, outsource)
-- backlog (citadele)
-- care an understand my business (partner)
-- honesty and courage
-- long-term thinking
-- speak my language
-- options, alternatives
-- prioritization help
-- outcome maximation (no SISO, analytics)
-- cost
-- quality
-- speed
-- initiativeness
-- reliability (delivery to promises)
-- problem ownership
-- transparency
-- continuous improvement
-- confidence in words and actions (firing low-performer)
-- trust
-- good relationship, good dude
-- positive surprises
-- magic :-) (INNOVATION TIME!)
-
----
-class: center, middle
-# ? 
-???
-questions?
+# Questions? 
 
 ---
 class: center, middle
@@ -882,7 +777,7 @@ class: last-emphasize
 
 --
 
-### - eXtreme Constraints
+### - Create systems
 ???
 - WiP = 1; Columns = 1
 - YBIYRI
@@ -1037,7 +932,7 @@ managing up. helping your manageers.
 
 ---
 class: center, middle
-## Leadership is not necessarily about big things...
+## 🍿 Leadership is not necessarily about big things...
 ### **dev.tube/video/3PcL8UkorEg**
 
 ---
