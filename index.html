@@ -134,6 +134,14 @@ class: middle, center, splash
 - Split into teams of 4, know each other names, role and background.
 
 ---
+background-image:url(manif0.png)
+background-size: contain
+
+---
+background-image:url(manif1.png)
+background-size: contain
+
+---
 background-image:url(manifesto0.png)
 background-size: contain
 ???
@@ -180,14 +188,14 @@ class: center, middle
 class: center, middle
 ![:ribbon Exercise, small]
 ### (1/2) Backlog Item #JR-1234:
-#### Taxpayers are required to submit tax reports from February 1st to March 31st. Every year, during that period, our system becomes unstable, as taxpayers rush to submit documents as soon as we email them. Since our webserver can't keep up with the load, make the system more scalable by re-implementing blocking code with reactive programming.
+#### Taxpayers are required to submit tax reports from February 1st to March 31st. Every year, during that period, our system becomes unstable, as taxpayers rush to submit documents as soon as we send them an email reminder. Since our webserver can't keep up with the load, make the system auto-scalable and rewrite slow blocking code with reactive programming.
 
 
 ---
 class: center, middle
 ![:ribbon Exercise, small]
 ### (2/2) Backlog Item #JR-2345:
-#### As a business analyst, I want to have a rich and convenient UI so that non-technical (internal) users and I could query any information from the database, analyze data, and build visual reports. The interface must support complex data queries, filtering, and charts. UX wireframes are attached.
+#### As a business analyst, I want to have a rich and convenient UI so that other business analysts (internal) and I could query any information from the database, analyze data, and build visual reports. The interface must support complex data queries, filtering, and charts. UX wireframes are attached.
 
 ---
 class: center, middle
@@ -219,124 +227,90 @@ class: center, middle
 - Story is a promise for a conversation. No solutions, only problems.
 - Hiring and culture, showing good example.
 
-
 ---
-class: center, middle
-# **Dev process**
-
----
-class: white
+class: white, bottom
 background-image:url(demand_supply.png)
 background-size: contain
 ???
-- Demand. Organize effective supply system.
-- Complex sociotechnical system.
+- You can't solve all problems yourself (your output is output of your team/IT). 
 
 ---
 class: white
 background-image:url(demand_supply2.png)
 background-size: contain
+???
+- what we're dealign here is a complex system.
+- you should know how to organize good, robust systems that work w/o you being 100% present, babysitting and micromanaging. 
+- well-designed systems doesn't need you, and you can drink mojito 🌴 Bad systems make you overwhelmed and busy.
 
 ---
 class: white
 background-image:url(demand_supply3.png)
 background-size: contain
 ???
-You can't do everything yourself. Create systems. 🌴
-
-
----
-class: center, middle
-## 💡 Nothing builds more trust than a team that delivers promised work on time.
+- who knows qualities of a system? :-)
+- emergent practices (e.g. someone bringing TDD or daily standups...)
+- nonlinearity (adding more people slows down the output)
+- reinforcing loops
 
 ---
-class: center
-![:ribbon Challenge]
-## What happens when the team stops delivering promised work on time?
+### How to measure IT performance?
 
 --
 
-![](https://images.gr-assets.com/books/1361113128l/17255186.jpg)
+#### 1. Lead time
+
+--
+The average time it takes to solve a problem. 
+
+--
+
+The average time a task spends "in progress".
+
+--
+
+Everything we do should be aimed at reducing the lead time: 
+
+- Cost-efficient solutions
+- Good architecture
+- Autonomous, cross-functional, self-organizing teams
+
+--
+
+.right-abs[![](topologies.jpg)]
+
 ???
-- pressure! what happens next?
-- to accept MAX work for utilization or even more (to please customer).
-- reinforcing loop: slow -> more pressure, more work
-- low quality, corners cut, debt goes up
-- no buffer to accomodate uncertaincy, missed deadlines
-- how people feel?
-- no innovation time
+- autonomous = no dependencies
+- cross-functional = necessery skills to solve problems
+- self-organizing = decide how to solve problem cost-efficiently, no baby sitting, micro-management, and control
 
 ---
-
-## 🖐️ 5 rules of delivering to the promise with Scrum:
+### How to measure IT performance?
+#### 1. Lead time
 
 --
 
-#### 1. Know your *velocity* (how much work you can comfortably deliver w/o cutting corners)
+#### 2. Defects
 
 --
 
-#### 2. Even under pressure, never take more work than allowed by your velocity.
+#### 3. DDP
 
 --
 
-#### 3. Every unplanned work added causes removal of planned work (inform stakeholders!)
+#### 4. TTR/TTD
 
 --
 
-#### 4. Estimate with planning poker (0, 1, 3, 5, 8, 13, 21, ∞).
-
---
-
-#### 5. When estimation is impossible, use spikes (no guessing).
-
----
-class: center, middle, bad
-### Estimates are evil (and are not needed).
-
----
-class: center, middle, oki
-### Estimates are not evil. We estimate to know how much work we can comfortably take, and to feel good when we deliver it on time.
-
----
-class: center, middle, bad
-### Sprint is not a committment.
-
----
-class: white
-background-image:url(bullshitometer.png)
-background-size: contain
-
----
-class: center, middle, oki
-### Sprint is a commitment stakeholders can rely on. Scrum (and XP) gives you all the necessary tools to meet the commitment.
-
----
-class: center, middle, bad
-### But I am being assigned too much work...
-
----
-background-image:url(kentbeck.jpg)
-background-size: contain
-class: center, middle, shadow
-### Work cannot be assigned; it can only be accepted. If someone tries to give you responsibility, only you can decide if you are responsible or if you aren’t.
-#### – eXtreme Programming Explained (Kent Beck)
-
----
-class: center, middle
-# 💡 Velocity must include slack.
+#### 5. ROI
 ???
-- buffer to accomodate uncertaincy (bad estimate, production issue). Otherwise you can't deliver to promises.
-- pay off technical debt / refactoring
-- time for your teammates to create presentation, a training, watch video, read a book. Your team will thank you :)
-- technical experimentation, R&D (R&D days don't work.) 
-- business incubation (who else will do this, if not you? Business will thank you.)
-- optimize for wow (surprise time!)
+- how to increase ROI? R&D
 
----
-class: white
-background-image:url(hackatons.png)
-background-size: contain
+--
+
+#### 6. Satisfaction
+???
+- satisfaction: i once eliminated sprints and turned on CD mode.
 
 ---
 class: center, middle, splash
@@ -424,7 +398,7 @@ class: white
 background-image:url(noswarm3.png)
 background-size: contain
 ???
-- the reality is usually much more harsh (nothing delivered, partial delivery, buggy, or lowquality features - lost trust and reputation)
+- the reality is usually much more harsh (nothing delivered, partial delivery, buggy, or lowquality delivery - lost trust and reputation)
 
 ---
 
@@ -493,6 +467,11 @@ how it's called in Scrum? Swarming :-)
 Set explicit WiP limits so that developers focus on completing existing stories, instead of starting new stories. If WiP limit is reached, nobody is allowed to take new work. Everybody should be *helping finish the existing work*, eliminate process bottlenecks, or slack.
 
 --
+- Correct WiP limits minimize batching.
+- Correct WiP limits turns on "swarming" and force people to collaborate more (including across the roles).
+- Total WiP < of people in the team.
+
+--
 
 ![](goal.jpg)&nbsp;
 ![](leanpop.jpg)
@@ -523,6 +502,14 @@ class: center, middle
 
 --
 
+* Law of Diminishing Returns (adding additional manpower beyond optimal level results in less efficient ops)
+* Brook's Law
+* Two-Pizza Teams 🍕🍕
+???
+adding manpower to a late software project makes it later
+
+--
+
 #### 2. Make them more proficient (XP)
 
 --
@@ -546,7 +533,7 @@ class: center, middle
 
 --
 
-### <i class="fas fa-recycle"></i> Waiting
+### <i class="fas fa-recycle"></i> Waiting / Delays / Handoffs
 ???
 - long-running tests
 
@@ -574,33 +561,223 @@ background-image:url(my_money.jpg)
 background-size: contain
 
 ---
-<table>
-  <tr>
-    <td width="500px"><h4>Good</h4></th>
-    <td><h3>Bad</h3></th>
-  </tr>
-  <tr>
-    <td><h5>✅ Autonomous, cross-functional, self-organizing teams</h5> </td><td><h5>❌ Backend, front-end, QA, DevOps "teams"</h5></td>
-  </tr>
-  <tr>
-    <td><h5>✅ Architecting for flow</h5> </td><td><h5>❌ Architecting for low duplication of effort and reuse (too early)</h5></td>
-  </tr>  
-  <tr>
-    <td><h5>✅ Continuous technical excellence</h5> </td><td><h5>❌ Mediocrity / The Invisible Threat</h5></td>
-  </tr>    
-  <tr>
-    <td><h5>✅ Measuring IT performance: lead time (velocity), due date performance, defects, wastes, TTR, TTD, and ROI</h5> </td><td><h5>—</h5></td>
-  </tr>      
-</table>
+class: center, middle
+## 💡 Nothing builds more trust than a team that delivers promised work on time.
+#### ( = due date performance)
+
+---
+class: center
+![:ribbon Challenge]
+## What happens when the team stops delivering promised work on time?
+
+--
+
+![](phoenix.jpg)
+???
+- pressure! what happens next?
+- to accept MAX work for utilization or even more (to please customer).
+- reinforcing loop: slow -> more pressure, more work
+- low quality, corners cut, debt goes up
+- no buffer to accomodate uncertaincy, missed deadlines
+- how people feel?
+- no innovation time
+
+---
+
+## 🖐️ 5 rules of delivering to the promise with Scrum:
+
+--
+
+#### 1. Know your *velocity* (how much work you can comfortably deliver w/o cutting corners)
+
+--
+
+#### 2. Even under pressure, never take more work than allowed by your velocity.
+
+--
+
+#### 3. Every unplanned work added causes removal of planned work (inform stakeholders!)
+
+--
+
+#### 4. Estimate with planning poker (0, 1, 3, 5, 8, 13, 21, ∞).
+
+--
+
+#### 5. When estimation is impossible, use spikes (no guessing).
+
+---
+class: center, middle, bad
+### Estimates are evil (and are not needed).
+???
+made for managers???
+
+---
+class: center, middle, oki
+### Estimates are not evil. We estimate to know how much work we can comfortably take, and to feel good when we deliver it on time.
+
+---
+class: center, middle, bad
+### Sprint is not a committment.
+
+---
+class: white
+background-image:url(bullshitometer.png)
+background-size: contain
+
+---
+class: center, middle, oki
+### Sprint is a commitment stakeholders can rely on. Scrum (and XP) gives you all the necessary *tools* to meet the commitment.
+
+---
+class: center, middle, bad
+### But I am being assigned too much work...
+
+---
+background-image:url(kentbeck.jpg)
+background-size: contain
+class: center, middle, shadow
+### Work cannot be assigned; it can only be accepted. If someone tries to give you responsibility, only you can decide if you are responsible or if you aren’t.
+#### – eXtreme Programming Explained
 
 ---
 class: center, middle
-# 🍿 The Economics of Software Design 
+## 💡 Velocity must include slack.
+???
+- buffer to accomodate uncertaincy (bad estimate, production issue). Otherwise you can't deliver to promises.
+- pay off technical debt / refactoring
+- time for your teammates to create presentation, a training, watch video, read a book. Your team will thank you :)
+- technical experimentation, R&D (R&D days don't work.) 
+- business incubation (who else will do this, if not you? Business will thank you.)
+- optimize for wow (surprise time!)
+
+---
+class: center, middle
+## **Throughput and technical debt**
+
+---
+class: center, middle
+### 💡 There is a strong correlation between the quality of the codebase and **throughput**.
+???
+- the shittier the code is, the less productive the team is. High quality = high throughput.
+
+---
+class: center, middle
+### The goal of XP is to enable **stable throughput over time**.
+
+---
+class: white
+background-image:url(threat0.png)
+background-size: contain
+???
+- features that took hours to add, now take days or weeks
+- and delivery team is slow and becomes a bottleneck to make world a better place :-) 
+
+---
+class: white
+background-image:url(threat1.png)
+background-size: contain
+???
+- Can someone explain why throughput drops faster (exponentially) than it increases?
+### Reinforcing loops:
+- Broken window theory
+- Lehman's Law: as a system evolves, its complexity increases unless work is done to maintain or reduce it. (as we add functionality);
+- Brook's Law
+- Gresham's Law (bad components drive out good components)
+### 
+- The rule that makes throughput gradually improve? 
+- The (Boy)Scout Rule.
+
+---
+class: white
+background-image:url(threat2.png)
+background-size: contain
+???
+- TD - cumulative consequences of corners being cut.
+- The currenty of TD is throughput. So we pay with throughput.
+
+---
+class: center, middle
+# Is technical debt a bad thing?
+???
+- raise your hand who thinks technical debt is a bad thing?
+- who thinks it's a good thing?
+- is taking a loan (credit) a bad thing?
+- it depends how you use and manage the debt.
+
+---
+class: center, middle
+## Technical debt is a **tool** for getting a short-term gain. **Causes addiction** and needs to be managed.
+???
+- unexpecteed problem, a black swan event
+
+---
+class: bad
+*Manager*: When will the new permission be done?
+
+*Dev*: Mmmm, I hope tomorrow, at the end of the day.
+
+*Manager*: We need it today. Can’t you find a “creative” way to do it? <- bad planning (fixed due date tasks first)
+
+*Dev*: Let me think…
+
+*Manager*: We have 5 clients that really need this today. Else they will probably not sign the contract.
+
+*Dev*: But the…
+
+*Manager*: Look, it’s important that you understand the business value of it. Isn’t it just a new condition in the code? Just put it there, and we’ll “fix it” later.
+
+*Dev*: Ok.
+
+*Manager*: So we’ll be able to deploy today?
+
+*Dev*: Aham.
+
+---
+class: oki
+*Manager*: When will the new permission be done?
+
+*Dev*: Mmmm, I hope tomorrow, at the end of the day. 
+
+*Manager*: We need it today. Can’t you find a “creative” way to do it? 
+
+*Dev*: OK. We can ship today by cutting some corners and still deliver the promised Sprint scope. Beware that our velocity for the next Sprint will drop because we'll need to pay the technical debt.
+
+---
+class: white
+background-image:url(debt0.png)
+background-size: contain
+
+---
+class: white
+background-image:url(debt1.png)
+background-size: contain
+
+---
+class: white
+background-image:url(debt2.png)
+background-size: contain
+
+---
+class: white
+background-image:url(debt3.png)
+background-size: contain
+
+---
+class: white
+background-image:url(debt4.png)
+background-size: contain
+
+---
+class: center, middle
+## 🍿 The Economics of Software Design 
 ### **dev.tube/video/TQ9rng6YFeY**
 
 ---
 class: center, middle
-# Questions? 
+# Q&A
+???
+- now you know about dev processes much more than most developers on the market. Tomorrow we'll do a recap and switch to a new topic - mentoring.
 
 ---
 class: center, middle
@@ -993,13 +1170,13 @@ class: center, middle
         return '<div class="corner-ribbon">' + text + '</div>';
       };      
       remark.macros.levels = function(text, one, two, three, four, five) {
-        return '<div class="left">' + text  + '</div>' + '<div class="right"><i class="' + one + ' fa-circle"></i> <i class="' + two + ' fa-circle"></i> <i class="' + three + ' fa-circle"></i> <i class="' + four + ' fa-circle"></i> <i class="' + five + ' fa-circle"></i></div>' +
-        '<div style="clear:both"></div>'        
+        return '<div class="left">' + text  + '</div>' + '<div class="right"><i class="' + one + ' fa-circle"></i> <i class="' + two + ' fa-circle"></i> <i class="' + three + ' fa-circle"></i> <i class="' + four + ' fa-circle"></i> <i class="' + five + ' fa-circle"></i></div>' + '<div style="clear:both"></div>'        
       };
       var slideshow = remark.create({
         ratio: '16:9',
         slideNumberFormat: function (current, total) { return "" }
       })
+
     </script>
   </body>
 </html>
