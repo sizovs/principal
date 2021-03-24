@@ -183,6 +183,8 @@ class: center, middle
 class: center, middle
 ![:ribbon Exercise, small]
 ### Find cost-efficient solutions to the problems:
+???
+- preferably, without writing much code.
 
 ---
 class: center, middle
@@ -201,12 +203,13 @@ class: center, middle
 class: center, middle
 ### A good backlog item describes a problem, not a specific solution. The team decides how to solve the problem *cost-effieciently*.
 #### ⚠️ Spoon-feeding a team with specific solutions leads to low motivation, low innovation culture, and mediocre software solutions.
-???
-- skimlinks story
 
 ---
 class: center, middle
 ### ⚠️ The PO hired to deal with the customer on behalf of developers is an anti-pattern (and has nothing to do with Scrum).
+???
+- all hands on deck.
+- skimlinks story
 
 ---
 class: center, middle
@@ -261,11 +264,11 @@ background-size: contain
 #### 1. Lead time
 
 --
-The average time it takes to solve a problem. 
+The time it takes to solve a problem. 
 
 --
 
-The average time a task spends "in progress".
+The time a task stays "in progress".
 
 --
 
@@ -274,6 +277,9 @@ Everything we do should be aimed at reducing the lead time:
 - Cost-efficient solutions
 - Good architecture
 - Autonomous, cross-functional, self-organizing teams
+???
+- this is main metric we have to optimize.
+- and we'll talk a lot about it today.
 
 --
 
@@ -333,16 +339,18 @@ class: center, middle
 ![:ribbon Challenge]
 ### Team has 20 cards in progress and throughput is 4 cards/day. 
 ### Lead time = `____` days
+???
+- the exact number is not as important as understanding the relationship.
 
 ---
 class: center, middle
 ## 💡 Focus as many people as possible on as few projects/stories/tasks as possible.
 ???
-- one thing at a time is the best!
+- one thing at a time is what you have to aim for.
 
 ---
 class: center, middle, bad
-### I don't think Little's Law is important because we use Scrum and deliver work in batches (2-week sprints).
+### Little's Law and WiP is for Kanban. I don't think Little's Law is important because we use Scrum and deliver work in batches (2-week sprints).
 
 ---
 
@@ -411,18 +419,30 @@ background-size: contain
 class: white
 background-image:url(swarm0.png)
 background-size: contain
+???
+- We're starting a sprint by taking the top priority problem (*cost of delay*) and the deciding how to split the work and collaborate on it so it can be completed faster. Let's say it’s a new software feature (a vertical slide of functionality).
+- feeding a team with horizontal slices hinders self-organization :-)
+- *This is the point of a daily standup* - how do we self-organize to deliver the top priority work faster?
+
 
 ---
 
 class: white
 background-image:url(swarm1.png)
 background-size: contain
+???
+- involving tester early make tester's life easier; small increments reduce testing time.
 
 ---
 
 class: white
 background-image:url(swarm2.png)
 background-size: contain
+???
+- cannot throw over the wall. Developers should: 
+- 1) help testers complete the work faster (sit together, break things together (pairing or separately), fixing the shit right away, looking for shortcomings in test process, improve tools); 
+- 2) focus on the next process steps (e.g. documenting api, preparing prod env, preparing sprint demo); show Chef movie dynamics
+
 
 ---
 
@@ -452,13 +472,13 @@ background-size: contain
 
 #### 💡 Low WiP reduces lead time, reduces risks, and improves teamwork
 ???
-reduces lead time = accelerates value delivery.
+reduces lead time = accelerates delivery of value.
 
 --
 
 #### 💡 Focus as many people as possible on as few projects/stories/tasks as possible
 ???
-how it's called in Scrum? Swarming :-)
+remember how it's called in Scrum? Swarming :-)
 
 --
 
@@ -467,8 +487,8 @@ how it's called in Scrum? Swarming :-)
 Set explicit WiP limits so that developers focus on completing existing stories, instead of starting new stories. If WiP limit is reached, nobody is allowed to take new work. Everybody should be *helping finish the existing work*, eliminate process bottlenecks, or slack.
 
 --
-- Correct WiP limits minimize batching.
-- Correct WiP limits turns on "swarming" and force people to collaborate more (including across the roles).
+- WiP limits minimize batching.
+- WiP limits turn on "swarming" and force people to collaborate more (including across the roles).
 - Total WiP < of people in the team.
 
 --
@@ -476,6 +496,14 @@ Set explicit WiP limits so that developers focus on completing existing stories,
 ![](goal.jpg)&nbsp;
 ![](leanpop.jpg)
 ![](kanban.jpg)&nbsp;
+
+---
+class: center, middle
+<video height="450" controls type="video/mp4">
+  <source src="burnt.mp4">
+  Your browser does not support the video tag.
+</video>
+### — Burnt (2015)
 
 ---
 class: center, middle
@@ -505,8 +533,6 @@ class: center, middle
 * Law of Diminishing Returns (adding additional manpower beyond optimal level results in less efficient ops)
 * Brook's Law
 * Two-Pizza Teams 🍕🍕
-???
-adding manpower to a late software project makes it later
 
 --
 
@@ -1067,9 +1093,8 @@ class: center, middle
 - more fun cutting through boring tasks / shitty code
 - knowledge transfer (lower bus factor, no knowledge silos, 2 ppl ready to change)
 - eliminates code reviews, interruptions caused by it.
-- eliminates code reviews that ALWAYS leads to rework.
+- eliminates code reviews that ALWAYS lead to rework.
 - eliminates code review where the reviewer NEVER understands code well enough.
-- SCIENCE! 15% higher productivity!
 
 ---
 ## What skills to grow?
