@@ -276,7 +276,7 @@ Everything we do should be aimed at reducing the lead time:
 
 - Cost-efficient solutions
 - Good architecture
-- Autonomous, cross-functional, self-organizing teams
+- Full-cycle teams (autonomous, cross-functional, self-organizing)
 ???
 - this is main metric we have to optimize.
 - and we'll talk a lot about it today.
@@ -610,33 +610,54 @@ class: center
 
 ---
 
-## 🖐️ 5 rules of delivering to the promise with Scrum:
+### 🖐️ 10 rules of delivering to the promise with Scrum:
 
 --
 
-#### 1. Know your *velocity* (how much work you can comfortably deliver w/o cutting corners)
+##### 1. Know your **velocity** (how much work you can comfortably deliver w/o cutting corners)
 
 --
 
-#### 2. Even under pressure, never take more work than allowed by your velocity.
+##### 2. Even under pressure, never take more work than allowed by your velocity
 
 --
 
-#### 3. Unplanned work added triggers removal of planned work (inform stakeholders!)
-
-##### - minimize the amount of unplanned work.
+##### 3. Remove planned work when unplanned work pops up (and remember to inform impacted stakeholders)
 
 --
 
-#### 4. Estimate with planning poker and *relative complexity points* (0, 1, 3, 5, 8, 13, ∞)
-##### - we intentionally drop numbers from the fibonacci sequence to gain speed at the cost of precision.
-##### - because estimates are imprecise, comfortable velocity must include a buffer. Some teams inflate (f**kup) estimates to make a buffer.
+##### 4. Minimize the amount of unplanned work
+
+--
+
+##### 5. Estimate with *relative complexity points* (0, 1, 3, 5, 8, 13, ∞) and drop numbers from the seq to gain speed at the cost of precision
+
+--
+
+##### 6. Play planning poker until all team members' estimates match. Reduce HiPPO pressure.
+
+--
+
+##### 7. When estimation is difficult or the problem is too big, *split it* or use *spikes*. Minimize unknowns instead of guessing in blind.
+
+--
+
+##### 8. Because estimates are imprecise, comfortable velocity must include a buffer. Don't ~~f**kup~~ inflate estimates to make a buffer.
 ???
-- you can literally planning poker cards
+- “developer workweek is 40 hours. 3 devs in a team. Why velocity is not 120 hours? What are you doing in the remaining time?” and dozens of problems caused by this wrong, but obvious relationship: 
+- planning for maximum hours utilization (120 hours and zero slack), 
+- for Villis it takes only 1 hour because he is senior, but for Eduards it’s 3 days because he is junior, yada-yada…
+- purposefully inflating estimates to get some slack
+- explaining to the customer what is pair programming : ) Relative complexity estimation doesn’t have this problem.
+- instead of spending time on determining exact hours, better spend time on story slicing.
 
 --
 
-#### 5. When estimation is difficult, *split the problem* or use *spikes* (no guessing).
+##### 9. Turn on swarming for speed and continuous flow. Monitor the flow with The Burndown Chart and Kanban board
+
+--
+
+##### 10. Keep technical debt under control
 
 ---
 class: center, middle, bad
@@ -886,6 +907,8 @@ Mastery! also applies to seniors (for some of them, teaching is the next level)
 - The Hawthorne Effect: impostors fail many pair programming / whiteboard exercises (options). 
 - optimize for WOW (after-taste). mentoring during interview (hiring learners, super cool reputation)
 - book as a gift. (goodreads :-)
+- protip: before you come to work - clean code or TDD; during probation – the craftsmen.
+- Protip: if you’re asking a candidate to do homework, you owe the candidate a code review. 
 
 --
 
@@ -1097,7 +1120,7 @@ class: center, middle
 - more fun cutting through boring tasks / shitty code
 - knowledge transfer (lower bus factor, no knowledge silos, 2 ppl ready to change)
 - eliminates code reviews, interruptions caused by it.
-- eliminates code reviews that ALWAYS lead to rework.
+- eliminates code reviews that ALWAYS lead to rework (code review ping-pong)
 - eliminates code review where the reviewer NEVER understands code well enough.
 
 ---
